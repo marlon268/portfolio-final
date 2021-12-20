@@ -7,6 +7,7 @@
 		font-size: 1rem;
 	}
 	#inicio {
+		align-items: flex-start;
 		padding: 0;
 	}
 
@@ -20,5 +21,9 @@
 
 	.inicio_img img {
 		width: 200px;
+	}
+
+	.habilidades_habilidad-tecnologia h2 {
+		font-size: 2rem;
 	}
 }

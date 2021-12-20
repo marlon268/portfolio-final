@@ -6,4 +6,12 @@
 	.habilidades_container {
 		margin-top: 2rem;
 	}
+
+	section {
+		height: auto;
+	}
+
+	#inicio {
+		height: 100%;
+	}
 }

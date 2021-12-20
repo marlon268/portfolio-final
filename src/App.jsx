@@ -1,4 +1,5 @@
 import React from 'react';
+import 'animate.css';
 
 import marlon from '../public/assets/marlon.png';
 import html from '../public/assets/html.svg';
@@ -13,12 +14,11 @@ import webpack from '../public/assets/webpack.svg';
 import git from '../public/assets/git.svg';
 import github from '../public/assets/github.svg';
 import linkedin from '../public/assets/linkedin.svg';
-
 import pdf from '../public/assets/Marlon-varon.pdf';
 
 export const App = () => {
 	return (
-		<div className="container">
+		<div className="container animate__animated animate__fadeInTopLeft">
 			<header className="header">
 				<nav className="header-nav">
 					<div className="header_link">
@@ -39,13 +39,16 @@ export const App = () => {
 				</nav>
 
 				<div className="social_links">
-					<a href="#">
+					<a href="https://github.com/marlon268" target="_blank">
 						<div>
 							<img src={github} alt="githud-logo" />
 							<h2>GitHub</h2>
 						</div>
 					</a>
-					<a href="">
+					<a
+						href="https://www.linkedin.com/in/marlon-estiben-varon-gonzalez-3167ba194/"
+						target="_blank"
+					>
 						<div>
 							<img src={linkedin} alt="linkedin-logo" />
 							<h2>LinkedIn</h2>
@@ -62,32 +65,36 @@ export const App = () => {
 
 			<main className="main">
 				<section id="inicio">
-					<div className="inicio_text">
-						<div>
-							<h1>
-								Hola, yo soy Marlon Varon <br /> Desarrollador frontend
-							</h1>
-							<h2>
-								😊Soy una persona amante de la tecnología y el
-								desarrollo web fronted. 👦🏽 Me gusta poner en practica
-								todos los conocimientos que he adquirido. Soy una
-								persona con facilidades para aprender nuevas tecnologias
-								y adaptarme a nuevos grupos de trabajo. 💻
-							</h2>
-							<a href={pdf} download="marlon-CV">
-								<button className="descargar-cv">
-									<h2>Descargar CV</h2>{' '}
-								</button>
-							</a>
+					<div className="inicio_container">
+						<div className="inicio_text">
+							<div>
+								<h1>
+									Hola, yo soy Marlon Varon <br /> Desarrollador
+									frontend
+								</h1>
+								<h2>
+									😊Soy una persona amante de la tecnología y el
+									desarrollo web fronted. 👦🏽 Me gusta poner en practica
+									todos los conocimientos que he adquirido. Soy una
+									persona con facilidades para aprender nuevas
+									tecnologias y adaptarme a nuevos grupos de trabajo.
+									💻
+								</h2>
+								<a href={pdf} download="marlon-CV">
+									<button className="descargar-cv">
+										<h2>Descargar CV</h2>{' '}
+									</button>
+								</a>
+							</div>
 						</div>
-					</div>
-					<div className="inicio_img">
-						<img src={marlon} alt="mineFoto" />
+						<div className="inicio_img">
+							<img src={marlon} alt="mineFoto" />
+						</div>
 					</div>
 				</section>
 				<section id="habilidades">
 					<div className="habilidades_container">
-						<div className="habilidades_habilidad">
+						<div className="habilidades_habilidad habilidades_animacion">
 							<div className="habilidades_havilidad-titulo">
 								<h1>Tecnologias</h1>
 							</div>
@@ -106,7 +113,7 @@ export const App = () => {
 								</div>
 							</div>
 						</div>
-						<div className="habilidades_habilidad">
+						<div className="habilidades_habilidad habilidades_animacion">
 							<div className="habilidades_havilidad-titulo">
 								<h1>Frameworks</h1>
 							</div>
@@ -125,7 +132,7 @@ export const App = () => {
 								</div>
 							</div>
 						</div>
-						<div className="habilidades_habilidad">
+						<div className="habilidades_habilidad habilidades_animacion">
 							<div className="habilidades_havilidad-titulo">
 								<h1>Herramientas</h1>
 							</div>
