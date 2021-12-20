@@ -1,16 +1,16 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  font-family: "Heebo", sans-serif;
+	font-family: 'Heebo', sans-serif;
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
+	font-size: 3rem;
+	font-weight: 500;
 }
 
 h2,
@@ -18,151 +18,161 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 #app {
-  display: flex;
-  background-color: #de834d;
-  width: 100vw;
-  height: 100vh;
+	display: flex;
+	background-color: #de834d;
+	width: 100vw;
+	height: 100vh;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  background-color: white;
-  box-shadow: 2px 2px 10px 0px rgb(0, 0, 0);
-  width: 85%;
-  height: 90%;
-  position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	background-color: white;
+	box-shadow: 2px 2px 10px 0px rgb(0, 0, 0);
+	width: 95%;
+	height: 95%;
+	position: relative;
 }
 
 .header {
-  border: 1px solid black;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  width: 85%;
-  position: fixed;
-  top: 5%;
+	border: 1px solid black;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	width: 95%;
+	position: fixed;
 }
 
 .header-nav {
-  display: flex;
+	display: flex;
 }
 
 .header_link {
-  margin-right: 2rem;
+	margin-right: 2rem;
 }
 
 .social_links {
-  display: flex;
+	display: flex;
 }
 
 .social_links img {
-  width: 30px;
-  margin-right: 10px;
+	width: 30px;
+	margin-right: 10px;
 }
 
 .social_links div {
-  display: flex;
-  margin-right: 2rem;
+	display: flex;
+	margin-right: 2rem;
 }
 
 .main {
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-y: contain;
-  scroll-snap-type: y proximity;
-  margin: auto;
-  height: 100%;
-  width: 100%;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+	margin: auto;
+	height: 100%;
+	width: 100%;
 }
 
 section {
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  scroll-snap-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
 }
 
 #inicio {
-  flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;
 }
 
 #inicio .inicio_text {
-  width: 600px;
+	text-align: center;
+	width: 600px;
 }
 
 .descargar-cv {
-  cursor: pointer;
-  margin-top: 1rem;
-  padding: 0.3rem 1rem;
-  border-radius: 5%;
-  background-color: #de834d;
-  box-shadow: 1px 1px 3px 0px rgb(129, 129, 129);
+	cursor: pointer;
+	margin-top: 1rem;
+	padding: 0.3rem 1rem;
+	border-radius: 5%;
+	background-color: #de834d;
+	box-shadow: 1px 1px 3px 0px rgb(129, 129, 129);
 }
 
 .inicio_img img {
-  width: 350px;
-  border: 2px solid rgba(0, 0, 0, 0.301);
-  border-radius: 50%;
+	width: 400px;
+	border: 2px solid rgba(0, 0, 0, 0.301);
+	border-radius: 50%;
 }
 
 #habilidades {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 2%;
 }
 
 #habilidades .habilidades_habilidad {
-  width: 30%;
-  min-width: 400px;
-  height: auto;
-  min-height: 30%;
-  /*  border: 1px solid black; */
+	width: auto;
+	height: auto;
+	/*  border: 1px solid black; */
+}
+
+.habilidades_container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .habilidades_habilidad {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-top: 1%;
-  margin: 2rem;
-  flex-direction: column;
-  box-shadow: 2px 2px 10px 0px rgb(0, 0, 0);
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding-top: 1%;
+	margin: 2rem;
+}
+
+.habilidades_habilidad-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .habilidades_habilidad h1 {
-  font-size: 2.5rem;
+	margin: 0;
+	font-size: 2.5rem;
 }
 
 .habilidades_habilidad-tecnologia {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 80%;
-  margin-bottom: 1rem;
+	box-shadow: 2px 2px 10px 0px rgb(0, 0, 0);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 1rem;
+	width: 150px;
+	height: 150px;
 }
 
 .habilidades_habilidad-tecnologia img {
-  width: 50px;
+	width: 75px;
 }
